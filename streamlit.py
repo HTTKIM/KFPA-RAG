@@ -15,8 +15,8 @@ from langchain_openai.embeddings import OpenAIEmbeddings
 from dotenv import load_dotenv
 load_dotenv()
 
-st.set_page_config(page_title="LangChain: Chat with Documents", page_icon="🦜")
-st.title("🦜 LangChain: Chat with Documents")
+st.set_page_config(page_title="기술자료 검색기 Test", page_icon=":male-technologist:")
+st.title(":male-technologist: 기술자료 검색기 Test")
 
 
 @st.cache_resource(ttl="1h")
