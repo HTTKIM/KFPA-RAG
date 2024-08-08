@@ -14,7 +14,7 @@ from langchain_openai.embeddings import OpenAIEmbeddings
 from dotenv import load_dotenv
 load_dotenv()
 
-st.set_page_config(page_title="LangChain: Chat with Documents", page_icon="🦜")
+st.set_page_config(page_title="기술자료 검색기", page_icon=":books:")
 st.title(":male-technologist: 기술자료 검색기 Test")
 st.subheader("소방시설 설치대상 Test", divider="gray")
 
