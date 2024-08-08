@@ -69,7 +69,7 @@ def display_retrieved_documents(documents):
 
 db = get_faiss_db()
 retriever = db.as_retriever(search_type="mmr",
-                            search_kwargs={'k':3, 'fetch_k':5},
+                            search_kwargs={'k':10, 'fetch_k':15},
                             )     
 
 # Setup memory for contextual conversation
