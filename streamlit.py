@@ -29,7 +29,7 @@ def get_faiss_db():
         model_name=model_name,
         model_kwargs=model_kwargs,
         encode_kwargs=encode_kwargs)
-    db = FAISS.load_local("DB(R1500)", hf, allow_dangerous_deserialization=True)
+    db = FAISS.load_local("DB(test_240812)", hf, allow_dangerous_deserialization=True)
     return db
 
 class StreamHandler(BaseCallbackHandler):
@@ -69,7 +69,7 @@ def display_retrieved_documents(documents):
 
 db = get_faiss_db()
 retriever = db.as_retriever(search_type="mmr",
-                            search_kwargs={'k':10, 'fetch_k':15},
+                            search_kwargs={'k':10, 'fetch_k':20},
                             )     
 
 # Setup memory for contextual conversation
